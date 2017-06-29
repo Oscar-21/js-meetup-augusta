@@ -13,9 +13,9 @@ class App extends Component {
           <Header />
 
           <Route 
-            path='/about'
-            component={About}
+            render={(props) => (<About name='React' />)}
           />
+
         </div>
       </BrowserRouter>
     );
