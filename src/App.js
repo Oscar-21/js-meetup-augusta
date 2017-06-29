@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
 import About from './components/About';
 
@@ -7,10 +8,16 @@ import About from './components/About';
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
         <div>
           <Header />
-          <About name='React' />
+
+          <Route 
+            path='/about'
+            component={About}
+          />
         </div>
+      </BrowserRouter>
     );
   }
 }
