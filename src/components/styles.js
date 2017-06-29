@@ -1,20 +1,45 @@
 const styles = {
 
+  // App component
+  App: {
+    mainStyle: {
+      display: 'flex',
+      flexdirection: 'row',
+    }
+  },
+
+  // NavBar component
+  NavBar: {
+    sideBar: {
+      width: '10vw',
+      height: '100vh',
+    },
+
+    logoStyle: {
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  },
+
  // About Component styles 
   About: {
     mainStyle: {
-      fontFamily: 'Lato, sans-serif',
-      textAlign: 'center',
-      fontSize: '3em',
-      fontWeight: 'bold',
+      display: 'flex',
     }
   },
 
   // Account component styles
   Account: {
     mainStyle: {
-      fontSize: '3em',
+      alignItems: 'center',
+    },
+    headerStyle: {
+      display: 'flex',
+      flexDirection: 'column',
+      fontSize: '2.5em',
+      fontFamily: 'Lato',
       fontWeight: 'bold',
+      marginTop: '3%',
     }
   }
 }
